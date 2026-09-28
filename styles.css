@@ -6,3 +6,6 @@
 /* Keep the probability sheet centered in the visible viewport, not at document top. */
 .probability-modal{position:fixed;inset:0;align-items:center;padding:20px}
 .probability-card{width:min(88%,460px);margin:0}
+/* Result image already contains a fixed sample reward; mask only its text and place the live reward above it. */
+.screen-stage.is-result .live-prize{border:0;background:transparent;z-index:2}
+.screen-stage.is-result::after{content:"";position:absolute;z-index:1;left:29%;top:46.2%;width:42%;height:5.7%;border-radius:999px;background:rgba(255,249,222,.99);pointer-events:none}
