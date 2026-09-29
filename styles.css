@@ -13,3 +13,7 @@
 /* Final result reward cleanup: one centered live reward, no baked sample text. */
 .screen-stage.is-result::after{left:18%;top:42%;width:64%;height:14%;border:4px solid #ffb21d;border-radius:999px;background:linear-gradient(#fffef0,#fff7d2);box-shadow:0 4px 0 #d99b18;z-index:1}
 .screen-stage.is-result .live-prize{left:25%;top:43.3%;width:50%;height:8.1%;border:0;background:transparent;z-index:2}
+
+/* Final responsive reward sizing: smaller panel, larger live reward text. */
+.screen-stage.is-result::after{left:23%;top:42%;width:54%;height:10%;border:4px solid #ffb21d;border-radius:999px;background:linear-gradient(#fffef0,#fff7d2);box-shadow:0 4px 0 #d99b18;z-index:1}
+.screen-stage.is-result .live-prize{left:24%;top:42.5%;width:52%;height:9%;border:0;background:transparent;font-size:clamp(24px,6vw,36px);z-index:2}
